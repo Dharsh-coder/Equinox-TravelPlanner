@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Equinox Planner</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="page-header">
+
+    <a href="index.html" class="back-link">
+        ← Home
+    </a>
+
+    <h1>Equinox</h1>
+
+    <div class="header-space"></div>
+
+</header>
+
+
+<!-- Hero Section -->
+
+<section class="planner-hero">
+
+    <div class="planner-image">
+
+        <div class="image-overlay">
+
+            <div class="image-top">
+
+                <p class="image-brand">🌍 EQUINOX</p>
+
+                <h3>Explore Beyond Expectations</h3>
+
+            </div>
+
+            <div class="image-bottom">
+
+                <h2>
+                    Every destination has a story.
+                </h2>
+
+                <p>
+                    Let Equinox help you write yours.
+                </p>
+
+                <span>— Equinox</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Planner Heading -->
+
+<section class="planner-title">
+
+    <h2>Craft Your Next Adventure</h2>
+
+    <p>
+        Tell us about your dream trip and Equinox will create
+        a personalized travel experience just for you.
+    </p>
+
+</section>
+
+
+<!-- Planner Form -->
+
+<section class="planner-container">
+
+    
+    <div class="planner-form">
+<div class="planner-card">
+
+    <!-- Current Location -->
+
+<div class="form-section">
+
+    <h3>Where are you travelling from?</h3>
+
+    <input
+        type="text"
+        id="current-location"
+        placeholder="Enter your current city (e.g. Erode)">
+
+</div>
+
+    <!-- Destination -->
+    <div class="form-section">
+        <h3>Where would you like to go?</h3>
+
+        <input
+            type="text"
+            id="destination"
+            placeholder="Enter your destination (e.g. Manali)">
+    </div>
+
+    <!-- Travel Dates -->
+    <div class="form-section">
+        <h3>When are you planning to travel?</h3>
+
+        <p class="section-note">
+            Choose your preferred travel date and duration.
+        </p>
+
+        <div class="input-row">
+
+            <div class="input-box">
+    <label for="travel-date">Travel Date</label>
+    <input type="date" id="travel-date">
+</div>
+
+            <div class="input-box">
+    <label for="days">Number of Days</label>
+    <input
+        type="number"
+        id="days"
+        placeholder="Number of Days"
+        min="1">
+</div>
+
+        </div>
+    </div>
+
+    <!-- Budget -->
+<div class="form-section">
+
+    <h3>What's your estimated budget for the entire trip?</h3>
+
+    <p class="section-note">
+        Include accommodation, transportation, food and activities.
+    </p>
+
+    <input
+        type="number"
+        id="budget"
+        placeholder="Enter your estimated budget"
+        min="0">
+
+</div>
+
+
+
+<!-- Travel Group -->
+<div class="form-section">
+
+    <h3>Who's joining your adventure?</h3>
+
+    <p class="section-note">
+        Choose the group that best matches your trip.
+    </p>
+
+    <div class="travel-group">
+
+        <button type="button" class="group-card" data-group="Solo">
+            <span class="group-icon">👤</span>
+            <span class="group-title">Solo</span>
+        </button>
+
+        <button type="button" class="group-card" data-group="Couple">
+            <span class="group-icon">❤️</span>
+            <span class="group-title">Couple</span>
+        </button>
+
+        <button type="button" class="group-card" data-group="Family">
+            <span class="group-icon">👨‍👩‍👧</span>
+            <span class="group-title">Family</span>
+        </button>
+
+        <button type="button" class="group-card" data-group="Friends">
+            <span class="group-icon">👥</span>
+            <span class="group-title">Friends</span>
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Travelers -->
+<div class="form-section">
+
+    <h3>Tell us how many people will be joining this trip.</h3>
+
+    <p class="section-note">
+        Number of Travellers    </p>
+
+    <input
+        type="number"
+        id="travellers"
+        placeholder="eg: 4"
+        min="1">
+
+</div>
+
+<!-- Travel Interests -->
+<div class="form-section">
+
+    <h3>What kind of experience are you looking for?</h3>
+
+    <p class="section-note">
+        Select all that match your travel style.
+    </p>
+
+    <div class="interest-grid">
+
+        <button type="button" class="interest-btn" data-interest="Mountains">🏔 Mountains</button>
+        <button type="button" class="interest-btn" data-interest="Beaches">🏖 Beaches</button>
+        <button type="button" class="interest-btn" data-interest="Nature">🌲 Nature</button>
+        <button type="button" class="interest-btn" data-interest="Adventure">🎒 Adventure</button>
+        <button type="button" class="interest-btn" data-interest="Culture">🏛 Culture</button>
+        <button type="button" class="interest-btn" data-interest="Food">🍜 Food</button>
+        <button type="button" class="interest-btn" data-interest="Photography">📸 Photography</button>
+        <button type="button" class="interest-btn" data-interest="Shopping">🛍 Shopping</button>
+        <button type="button" class="interest-btn" data-interest="Water Sports">🌊 Water Sports</button>
+        <button type="button" class="interest-btn" data-interest="Nightlife">🎵 Nightlife</button>
+        <button type="button" class="interest-btn" data-interest="History">🏛 History</button>
+        <button type="button" class="interest-btn" data-interest="Wellness">🧘 Wellness</button>
+
+    </div>
+
+</div>
+
+<!-- Accommodation -->
+
+<div class="form-section">
+
+    <h3>Where would you love to stay?</h3>
+
+    <p class="section-note">
+        Select the accommodation that matches your travel style.
+    </p>
+
+    <div class="accommodation-grid">
+
+        <button type="button" class="stay-card" data-stay="Hotel">
+
+            <span class="stay-icon">🏨</span>
+
+            <h4>Hotel</h4>
+
+            <p>Comfort & convenience</p>
+
+        </button>
+
+        <button type="button" class="stay-card" data-stay="Homestay">
+
+            <span class="stay-icon">🏡</span>
+
+            <h4>Homestay</h4>
+
+            <p>Feel like a local</p>
+
+        </button>
+
+        <button type="button" class="stay-card" data-stay="Camping">
+
+            <span class="stay-icon">🏕️</span>
+
+            <h4>Camping</h4>
+
+            <p>Sleep under the stars</p>
+
+        </button>
+
+        <button type="button" class="stay-card" data-stay="Resort">
+
+            <span class="stay-icon">🌴</span>
+
+            <h4>Resort</h4>
+
+            <p>Relax in style</p>
+
+        </button>
+
+    </div>
+
+</div>
+
+<div class="form-section">
+
+    <h3>Preferred Mode of Transport</h3>
+
+    <p class="section-note">
+        We'll recommend the best option based on your journey,
+but you can choose any mode you prefer.
+    </p>
+
+    <div class="travel-group">
+
+        <div class="travel-card" data-transport="Flight">
+            <span class="travel-icon">✈️</span>
+            <h4>Flight</h4>
+            <p>Fast & comfortable</p>
+        </div>
+
+        <div class="travel-card" data-transport="Train">
+            <span class="travel-icon">🚆</span>
+            <h4>Train</h4>
+            <p>Scenic & affordable</p>
+        </div>
+
+        <div class="travel-card" data-transport="Bus">
+            <span class="travel-icon">🚌</span>
+            <h4>Bus</h4>
+            <p>Budget friendly</p>
+        </div>
+
+        <div class="travel-card" data-transport="Car">
+            <span class="travel-icon">🚗</span>
+            <h4>Car</h4>
+            <p>Flexible travel</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Travel Mood -->
+
+<div class="form-section">
+
+    <h3>What's your travel mood?</h3>
+
+    <p class="section-note">
+        Choose the pace that best matches your ideal trip.
+    </p>
+
+    <div class="mood-selector">
+
+        <div class="mood-option" data-mood="Relax & Recharge">
+            🌿 Relax & Recharge
+        </div>
+
+        <div class="mood-option" data-mood="Explore & Discover">
+            📷 Explore & Discover
+        </div>
+
+        <div class="mood-option" data-mood="Non-stop Adventure">
+            ⚡ Non-stop Adventure
+        </div>
+
+    </div>
+
+</div>
+
+<div class="form-section">
+
+    <h3>Anything else you'd like us to know?</h3>
+
+    <p class="section-note">
+    Share any preferences that will help us personalize your journey.
+</p>
+
+<p class="example-note">
+    Examples: Vegetarian food • Avoid crowded places • Pet-friendly stays • Wheelchair accessible • Sunrise viewpoints
+</p>
+
+<textarea id="preferences" rows="6"
+placeholder="Type your preferences here..."></textarea>
+
+</div>
+
+<div class="planner-footer">
+
+    <h2>Ready to discover your perfect adventure?</h2>
+
+    <p>
+        Let Equinox create a personalized travel plan based on your preferences.
+    </p>
+
+    <button class="generate-btn" id="createJourney">
+    ✨ Create My Journey
+</button>
+
+</div>
+
+</div>
+    </div>
+    
+</section>
+<script src="js/gemini.js"></script>
+<script src="js/planner.js"></script>
+</body>
+
+</html>
