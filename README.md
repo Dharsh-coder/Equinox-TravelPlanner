@@ -104,4 +104,4 @@ LinkedIn: www.linkedin.com/in/dharshini-senthilmurugan5
 
 ---
 
-## ⭐ If you like this project, dm your experience and ratings
+## ⭐ If you like this project, dm your experience and advice
